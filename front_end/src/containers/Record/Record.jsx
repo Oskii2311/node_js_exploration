@@ -21,6 +21,8 @@ class Record extends Component {
   }
 
   async update(e) {
+    e.stopPropagation();
+
     await updateNote(
       this.props.note.title,
       this.props.note.body,
@@ -61,7 +63,7 @@ class Record extends Component {
           className="record"
           onClick={this.show}
         >
-          {this.props.note.title}
+          <span className="text">{this.props.note.title}</span>
           {this.wchichButton()}
         </div>
         <div id={this.props.note._id} className="hide">

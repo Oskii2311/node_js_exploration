@@ -3,17 +3,27 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 40px;
   box-sizing: border-box;
   padding: 5px;
   text-align: left;
-  border-left: 2px solid transparent;
+  background: #fff;
+  margin-top: 4px;
+  border-radius: 4px;
+  font: 400 13px system-ui;
+  font-family: inherit;
+  outline: none;
 }
 
 .record:hover {
-  background-color: #11eeee;
   cursor: pointer;
-  border-left: 2px solid red;
+}
+
+.record:hover .text {
+  text-decoration: underline;
+}
+
+.text {
+  max-width: 120px;
 }
 
 .record:hover .record_button {
@@ -26,5 +36,18 @@
 }
 
 .show {
+  margin-top: -3px;
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left;
+  background: #F4F4F1;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font: 400 13px system-ui;
+  font-family: inherit;
 }

@@ -3,10 +3,33 @@
   margin: auto;
   padding: 20px;
   width: 900px;
-
 }
 
 .list_container {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 940px) {
+  .App {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .App {
+    width: 500px;
+  }
+  .list_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .App {
+    width: 300px;
+  }
+}
+

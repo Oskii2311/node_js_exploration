@@ -48,10 +48,10 @@ class Form extends Component {
         />
         <input
           type="text"
-          name="description"
+          name="body"
           placeholder="Type description"
           onChange={this.handleChange}
-          value={this.state.value}
+          value={this.state.body}
         />
         <input
           type="submit"

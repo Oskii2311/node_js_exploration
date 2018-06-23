@@ -22,11 +22,19 @@ class Record extends Component {
 
   async update(e) {
     e.stopPropagation();
+    let isWorking;
+    if (e.target.innerText === 'WORKING') {
+      isWorking = 'true';
+    } else if (e.target.innerText === 'TO DO') {
+      isWorking = 'false';
+    } else {
+      isWorking = 'done';
+    }
 
     await updateNote(
       this.props.note.title,
-      this.props.note.body,
-      e.target.innerText === 'WORKING' ? 'true' : 'done',
+      this.props.note.text,
+      isWorking,
       this.props.note._id,
     );
     this.refresh();
@@ -38,7 +46,12 @@ class Record extends Component {
     } else if (this.props.header === 'WORKING') {
       return <RecordButton onClick={this.update} text="DONE" />;
     }
-    return true;
+    return (
+      <div>
+        <RecordButton onClick={this.update} text="WORKING" />
+        <RecordButton onClick={this.update} text="TO DO" />
+      </div>
+    );
   }
 
   show() {
@@ -54,13 +67,15 @@ class Record extends Component {
   }
 
   render() {
+    const recordClass = `record ${this.props.header}`;
+
     return (
-      <div>
+      <div >
         <div
           tabIndex="0"
           onKeyDown={() => {}}
           role="button"
-          className="record"
+          className={recordClass}
           onClick={this.show}
         >
           <span className="text">{this.props.note.title}</span>

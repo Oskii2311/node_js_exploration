@@ -50,4 +50,11 @@
   border-bottom-right-radius: 4px;
   font: 400 13px system-ui;
   font-family: inherit;
+  opacity: 1;
+}
+
+.DONE {
+  text-decoration: line-through;
+  background-color: #FAAABB;
+  color: #828282;
 }

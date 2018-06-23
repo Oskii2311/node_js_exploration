@@ -1,4 +1,5 @@
 .record_button {
   opacity: 0;
   cursor: pointer;
+  border-radius: 4px;
 }

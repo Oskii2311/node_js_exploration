@@ -7,3 +7,6 @@ const password = 'yyy';
 module.exports = {
   url: `mongodb://${user}:${password}@mongoAdress/jakasbaza`
 }
+
+run app :
+npm i npm start in the root folder and next npm i npm start in the front_end folder.

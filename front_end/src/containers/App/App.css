@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  width: 900px;
+
+}
+
+.list_container {
+  display: flex;
+  justify-content: space-between;
+}

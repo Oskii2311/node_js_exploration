@@ -1,0 +1,11 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "max-len": ["error", 80],
+        "no-underscore-dangle": ["error", { "allow": ["_id"] }]
+    },
+    "globals": {
+        "fetch": false,
+        "document": false
+      }
+}

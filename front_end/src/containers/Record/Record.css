@@ -1,0 +1,30 @@
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left;
+  border-left: 2px solid transparent;
+}
+
+.record:hover {
+  background-color: #11eeee;
+  cursor: pointer;
+  border-left: 2px solid red;
+}
+
+.record:hover .record_button {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

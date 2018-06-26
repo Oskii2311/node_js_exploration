@@ -15,24 +15,18 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps({
   toDoNotes,
-  toDoHasErrored,
   toDoIsLoading,
   workingNotes,
-  workingHasErrored,
   workingIsLoading,
   doneNotes,
-  doneHasErrored,
   doneIsLoading,
 }) {
   return {
     toDoNotes,
-    toDoHasErrored,
     toDoIsLoading,
     workingNotes,
-    workingHasErrored,
     workingIsLoading,
     doneNotes,
-    doneHasErrored,
     doneIsLoading,
   };
 }
